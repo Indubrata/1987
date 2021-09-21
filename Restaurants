@@ -1,3 +1,7 @@
+//Copy and paste the entire program in your desired IDE or compiler. You can run the program as it is or add a few lines of your own, using the same syntax, if you wish. Good luck on your future journey with your restaurants. And this can also be used by any other person (one who does not own a restaurant).
+//Note - I have used BlueJ for running and making the program because of its simple UI but also you can run the program in any other IDE of your choice.
+//If you do not have a IDE or compiler downloaded fear not because cpoy-paste the link in a web browser (https://www.onlinegdb.com/online_java_compiler#) to compile the program online without having download anything. Simply copy-paste the entire program in the tab that opens up and click on 'Run' or F9 to enjoy the taste of the program.
+// You can also refer to my  other site (https://sites.google.com/view/1987-s-java-intro/home) to learn how to use Java. 
 import java .util.*;
 class Restaurant
 {
