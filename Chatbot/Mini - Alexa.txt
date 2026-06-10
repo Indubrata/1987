@@ -1,0 +1,604 @@
+//Copy and paste the entire program in your desired IDE or compiler. You can run the program as it is or add a few lines of your own, using the same syntax, if you wish. Good luck on your future journey with your restaurants. And this can also be used by any other person (one who does not own a restaurant).
+//Note - I have used BlueJ for running and making the program because of its simple UI but also you can run the program in any other IDE of your choice.
+//If you do not have a IDE or compiler downloaded fear not because cpoy-paste the link in a web browser (https://www.onlinegdb.com/online_java_compiler#) to compile the program online without having download anything. Simply copy-paste the entire program in the tab that opens up and click on 'Run' or F9 to enjoy the taste of the program.
+// You can also refer to my  other site (https://sites.google.com/view/1987-s-java-intro/home) to learn how to us
+//Note - Here I have typed only a few of the chat commands.You can add more chat commands by following the  same syntax.
+import java.awt.*;
+import java.net.*;
+import java.util.*;
+class Mini_Alexa
+{
+    public static void main()
+    {
+        Scanner sc = new Scanner(System.in);
+        boolean chatting = true;
+        String msg1="Type your message :-",n = "",fn="",mn="",mgmn="",mgfn="",pgmn="",pgfn="",sn="",fan="",bm="";
+        int bd=0,by=0;
+        System.out.println("Hey there!I'm your friend LetsChat ready to perform the following taskes for you :-");      
+        System.out.println("Type #Jokes to know some of the funniest jokes");                                           
+        System.out.println("Type #Movies to see some free & popular movies on Youtube, Disney+Hotstar and JioCinema");  
+        System.out.println("Type #Songs to listen to some of the popular songs on Youtube");                            
+        System.out.println("Type #Workout to see how to keep yourself fit everyday");                                   
+        System.out.println("Type #Facts to what are the top facts of today");
+        System.out.println("Type #News to know some of the trending news of today");
+        System.out.println("Type #Map to see the fastest route to reach your destination, if any");
+        System.out.println("Type #World to see the entire world right on your monitor");
+        System.out.println("Or simply start chatting with me");
+        while (chatting==true)
+        {
+            System.out.println(msg1);
+            String songapp = "",movieapp = "",reaction6="",reaction7="",reaction1 = "",reaction2 = "",reaction3 = "",reaction4 = "",reaction5 = "",msg = sc.nextLine();
+            switch(msg)
+            {
+                case "#Jokes":
+                System.out.println("A couple of New Jersey hunters are out in the woods when one of them falls to the ground. He doesn't seem to be breathing, his eyes are rolled back in his head. The other guy whips out his cell phone and calls the emergency services. He gasps to the operator: “My friend is dead! What can I do?”");
+                System.out.println("The operator, in a calm soothing voice says: “Just take it easy. I can help. First, let's make sure he's dead.” There is a silence, then a shot is heard. ");
+                System.out.println("The guy's voice comes back on the line. He says: “OK, now what?“");
+                System.out.println("Tell me your reaction");
+                reaction1 = sc.nextLine();
+                switch(reaction1)
+                {
+                    case "one more":
+                    System.out.println("Two guys are sitting on a bar stool. One starts to insult the other one. He screams, “I slept with your mother!” The bar gets quiet as everyone listens to see what the other weasel will do. The first again yells, “I SLEPT WITH YOUR MOTHER!” ");
+                    System.out.println("The other says, “Go home dad you’re drunk.”  ");
+                    System.out.println("Tell me your reaction");
+                    reaction2 = sc.nextLine();
+                    switch(reaction2)
+                    {
+                        case "one more":
+                        System.out.println("A turtle was walking down an alley in New York when he was mugged by a gang of snails. A police detective came to investigate and asked the turtle if he could explain what happened. ");
+                        System.out.println("The turtle looked at the detective with a confused look on his face and replied “I don't know, it all happened so fast.”");
+                        System.out.println("Tell me your reaction");
+                        reaction3 = sc.nextLine();
+                        switch(reaction3)
+                        {
+                            case "one more":
+                            System.out.println("Emma was taking an afternoon nap on New Year’s Eve before the festivities. After she woke up, she confided to William, her husband, \"I just dreamed that you gave me a diamond ring for a New Year’s present. What do you think it all means?\"");
+                            System.out.println("\"Aha, you’ll know tonight,» answered Max smiling broadly.\"");
+                            System.out.println("At midnight, as the New Year was chiming, William approached Emma and handed her a small package. Delighted and excited she opened it quickly. There in her hand rested a book entitled: “The meaning of dreams”.");
+                            System.out.println("Tell me your reaction");
+                            reaction4 = sc.nextLine();
+                            switch(reaction4)
+                            {
+                                case "one more":
+                                System.out.println("John, at a New Year’s party, turns to his friend, David, and asks for a cigarette.");
+                                System.out.println("\"I thought you made a New Year’s resolution and that you don’t smoke\", said David.");
+                                System.out.println("\"I’m in the process of quitting\", replies John with a grin.\"I am in the middle of phase one.\"");
+                                System.out.println("\"Phase one?\" asks David.");
+                                System.out.println("\"Yeah\", laughs John, \"I’ve quit buying.\"");
+                                System.out.println("Tell me your reaction");
+                                reaction5 = sc.nextLine();
+                                switch(reaction5)
+                                {        
+                                    case "one more":
+                                    System.out.println("Sorry,I have no more jokes in my pocket");
+                                }
+                            }
+                        }
+                    }
+                } 
+                msg1 = "Type your next message :-";
+                break;
+                case "#Movies":
+                System.out.println("Please specify which app should I use to surf for trending movies (Youtube / Disney+Hotstar / JioCinema)");
+                movieapp = sc.nextLine();
+                switch(movieapp)
+                {
+                    case "Youtube":
+                    try 
+                    {
+                        Desktop desktop = java.awt.Desktop.getDesktop();
+                        URI URL = new URI("https://www.youtube.com/results?search_query=movies");
+                        desktop.browse(URL);
+                    }
+                    catch (Exception e) 
+                    {
+                        e.printStackTrace();
+                    }
+                    break;
+                    case "Disney+Hotstar":
+                    try 
+                    {
+                        Desktop desktop = java.awt.Desktop.getDesktop();
+                        URI URL = new URI("https://www.hotstar.com/in/movies");
+                        desktop.browse(URL);
+                    }
+                    catch (Exception e) 
+                    {
+                        e.printStackTrace();
+                    }
+                    break;
+                    case "JioCinema":
+                    try 
+                    {
+                        Desktop desktop = java.awt.Desktop.getDesktop();
+                        URI URL = new URI("https://www.jiocinema.com/movies");
+                        desktop.browse(URL);
+                    }
+                    catch (Exception e) 
+                    {
+                        e.printStackTrace();
+                    }
+                    break; 
+                    default:
+                    System.out.println("");
+                }
+                msg1 = "Type your next message :-";
+                break;
+                case "#Songs":
+                System.out.println("Please specify which app should I use to surf for trending songs (Youtube / JioSaavn)");
+                songapp = sc.nextLine();
+                switch(songapp)
+                {
+                    case "Youtube":
+                    try 
+                    {
+                        Desktop desktop = java.awt.Desktop.getDesktop();
+                        URI URL = new URI("https://www.youtube.com/results?search_query=songs");
+                        desktop.browse(URL);
+                    }
+                    catch (Exception e) 
+                    {
+                        e.printStackTrace();
+                    }
+                    break;
+                    case "JioSaavn":
+                    try 
+                    {
+                        Desktop desktop = java.awt.Desktop.getDesktop();
+                        URI URL = new URI("https://www.jiosaavn.com");
+                        desktop.browse(URL);
+                    }
+                    catch (Exception e) 
+                    {
+                        e.printStackTrace();
+                    }
+                }
+                msg1 = "Type your next message :-";
+                break;
+                case "#News":
+                try 
+                {
+                    Desktop desktop = java.awt.Desktop.getDesktop();
+                    URI URL = new URI("https://microsoftnews.msn.com");
+                    desktop.browse(URL);
+                }
+                catch (Exception e) 
+                {
+                    e.printStackTrace();
+                }
+                msg1 = "Type your next message :-";
+                break;
+                case "#Workout":
+                try 
+                {
+                    Desktop desktop = java.awt.Desktop.getDesktop();
+                    URI URL = new URI("https://www.youtube.com/results?search_query=workout+videos");
+                    desktop.browse(URL);
+                }
+                catch (Exception e) 
+                {
+                    e.printStackTrace();
+                }
+                msg1 = "Type your next message :-";
+                break;
+                case "#Facts":
+                try
+                {
+                    Desktop desktop = java.awt.Desktop.getDesktop();
+                    URI URL = new URI("https://www.youtube.com/results?search_query=fact+of+the+day");
+                    desktop.browse(URL);
+                }
+                catch(Exception e)
+                {
+                    e.printStackTrace();
+                }
+                msg1 = "Type your next message :-";
+                break;
+                case "#Map":
+                try
+                {
+                    Desktop desktop = java.awt.Desktop.getDesktop();
+                    URI URL = new URI("https://www.google.co.in/maps/@21.125498,81.914063,5z");
+                    desktop.browse(URL);
+                }
+                catch(Exception e)
+                {
+                    e.printStackTrace();
+                }
+                break;
+                case "#World":
+                try
+                {
+                    Desktop desktop = java.awt.Desktop.getDesktop();
+                    URI URL = new URI("https://earth.google.com/web");
+                    desktop.browse(URL);
+                }
+                catch(Exception e)
+                {
+                    e.printStackTrace();
+                }
+                msg1 = "Type your next message :-";
+                break;
+                case "Who are you?":
+                case "What's your name?":
+                case "What is your name?":
+                case "What's ur name":
+                case "What is ur name":
+                case "Who r u?":
+                case "who are you?":
+                case "what's your name?":
+                case "what is your name?":
+                case "what's ur name":
+                case "what is ur name":
+                case "who r u":
+                System.out.println("I am LetsChat, your personal assisstant");
+                msg1 = "Type your next message :-";
+                break;
+                case "Bye":
+                case "Good Bye":
+                case "Good bye":
+                case "bye":
+                case "good Bye":
+                case "good bye":
+                System.out.println("It's too early :( , but still bye👋");                
+                chatting = false;
+                msg1 = "Type your next message :-";
+                break;
+                case "Who am I?":
+                case "What's my name?":
+                case "What is my name?":
+                case "Who m i?":
+                case "Who m I?":
+                case "who am I?":
+                case "what's my name?":
+                case "what is my name?":
+                case "who am i?":
+                case "who m i?":
+                case "Who am I":
+                case "What's my name":
+                case "What is my name":
+                case "Who m i":
+                case "Who m I":
+                case "who am I":
+                case "what's my name":
+                case "what is my name":
+                case "who am i":
+                case "who m i":
+                if (n=="")
+                {
+                    System.out.println("Umm, I don't know your name but if you tell me I'll remember It for you");
+                    n = sc.nextLine(); 
+                }
+                else if(n!="")
+                    System.out.println("Your name is " + n);
+                msg1 = "Type your next message :-";
+                break;
+                case "Who is my mother?":
+                case "What's my mother's name?":
+                case "What is my mother's name?":
+                case "Who's my mother?":
+                case "who is my mother?":
+                case "what's my mother's name?":
+                case "what is my mother's name?":
+                case "who's my mother?":
+                case "Who is my mother":
+                case "What's my mother's name":
+                case "What is my mother's name":
+                case "Who's my mother":
+                case "who is my mother":
+                case "what's my mother's name":
+                case "what is my mother's name":
+                case "who's my mother":
+                if (mn=="")
+                {
+                    System.out.println("Umm, I don't know your mother's name but if you tell me I'll remember It for you");
+                    mn = sc.nextLine(); 
+                }
+                else if(mn!="")
+                    System.out.println("Your mother's name is " + mn);
+                msg1 = "Type your next message :-";
+                break;
+                case "Who is my father?":
+                case "What's my father's name?":
+                case "What is my father's name?":
+                case "Who's my father?":
+                case "who is my father?":
+                case "what's my father's name?":
+                case "what is my father's name?":
+                case "who's my father?":
+                case "Who is my father":
+                case "What's my father's name":
+                case "What is my father's name":
+                case "Who's my father":
+                case "who is my father":
+                case "what's my father's name":
+                case "what is my father's name":
+                case "who's my father":
+                if (fan=="")
+                {
+                    System.out.println("Umm, I don't know your father's name but if you tell me I'll remember It for you");
+                    fan = sc.nextLine(); 
+                }
+                else if(fan!="")
+                    System.out.println("Your father's name is " + fan);
+                msg1 = "Type your next message :-";
+                break;
+                case "Which school do I read in?":
+                case "Which school did I read in?":
+                case "What's my school's name?":
+                case "What is my school's name?":
+                case "which school do I read in?":
+                case "which school did I read in?":
+                case "what's my school's name?":
+                case "what is my school's name?":
+                case "Which school do I read in":
+                case "Which school did I read in":
+                case "What's my school's name":
+                case "What is my school's name":
+                case "which school do I read in":
+                case "which school did I read in":
+                case "what's my school's name":
+                case "what is my school's name":
+                if (sn=="")
+                {
+                    System.out.println("Umm, I don't know your school's name but if you tell me I'll remember It for you");
+                    sn = sc.nextLine(); 
+                }
+                else if(sn!="")
+                    System.out.println("Your school's name is " + sn);
+                msg1 = "Type your next message :-";
+                break;
+                case "Who is my paternal grandfather?":
+                case "What's my paternal grandfather's name?":
+                case "What is my paternal grandfather's name?":
+                case "Who's my paternal grandfather?":
+                case "who is my paternal grandfather?":
+                case "what's my paternal grandfather's name?":
+                case "what is my paternal grandfather's name?":
+                case "who's my paternal grandfather?":
+                case "Who is my paternal grandfather":
+                case "What's my paternal grandfather's name":
+                case "What is my paternal grandfather's name":
+                case "Who's my paternal grandfather":
+                case "who is my paternal grandfather":
+                case "what's my paternal grandfather's name":
+                case "what is my paternal grandfather's name":
+                case "who's my paternal grandfather":
+                if (pgfn=="")
+                {
+                    System.out.println("Umm, I don't know your paternal grandfather's name but if you tell me I'll remember It for you");
+                    pgfn = sc.nextLine(); 
+                }
+                else if(pgfn!="")
+                    System.out.println("Your paternal grandfather's name is " + pgfn);
+                msg1 = "Type your next message :-";
+                break;
+                case "Who is my paternal grandmother?":
+                case "What's my paternal grandmother's name?":
+                case "What is my paternal grandmother's name?":
+                case "Who's my paternal grandmother?":
+                case "who is my paternal grandmother?":
+                case "what's my paternal grandmother's name?":
+                case "what is my paternal grandmother's name?":
+                case "who's my paternal grandmother?":
+                case "Who is my paternal grandmother":
+                case "What's my paternal grandmother's name":
+                case "What is my paternal grandmother's name":
+                case "Who's my paternal grandmother":
+                case "who is my paternal grandmother":
+                case "what's my paternal grandmother's name":
+                case "what is my paternal grandmother's name":
+                case "who's my paternal grandmother":
+                if (pgmn=="")
+                {
+                    System.out.println("Umm, I don't know your paternal grandmother's name but if you tell me I'll remember It for you");
+                    pgmn = sc.nextLine(); 
+                }
+                else if(pgmn!="")
+                    System.out.println("Your paternal grandmother's name is " + pgmn);
+                msg1 = "Type your next message :-";
+                break;
+                case "Who is my maternal grandmother?":
+                case "What's my maternal grandmother's name?":
+                case "What is my maternal grandmother's name?":
+                case "Who's my maternal grandmother?":
+                case "who is my maternal grandmother?":
+                case "what's my maternal grandmother's name?":
+                case "what is my maternal grandmother's name?":
+                case "who's my maternal grandmother?":
+                case "Who is my maternal grandmother":
+                case "What's my maternal grandmother's name":
+                case "What is my maternal grandmother's name":
+                case "Who's my maternal grandmother":
+                case "who is my maternal grandmother":
+                case "what's my maternal grandmother's name":
+                case "what is my maternal grandmother's name":
+                case "who's my maternal grandmother":
+                if (mgmn=="")
+                {
+                    System.out.println("Umm, I don't know your maternal grandmother's name but if you tell me I'll remember It for you");
+                    mgmn = sc.nextLine(); 
+                }
+                else if(mgmn!="")
+                    System.out.println("Your maternal grandmother's name is " + mgmn);
+                msg1 = "Type your next message :-";
+                break;
+                case "Who is my maternal grandfather?":
+                case "What's my maternal grandfather's name?":
+                case "What is my maternal grandfather's name?":
+                case "Who's my maternal grandfather?":
+                case "who is my maternal grandfather?":
+                case "what's my maternal grandfather's name?":
+                case "what is my maternal grandfather's name?":
+                case "who's my maternal grandfather?":
+                case "Who is my maternal grandfather":
+                case "What's my maternal grandfather's name":
+                case "What is my maternal grandfather's name":
+                case "Who's my maternal grandfather":
+                case "who is my maternal grandfather":
+                case "what's my maternal grandfather's name":
+                case "what is my maternal grandfather's name":
+                case "who's my maternal grandfather":
+                if (mgfn=="")
+                {
+                    System.out.println("Umm, I don't know your maternal grandfather's name but if you tell me I'll remember It for you");
+                    mgfn = sc.nextLine(); 
+                }
+                else if(mgfn!="")
+                    System.out.println("Your maternal grandfather's name is " + mgfn);
+                msg1 = "Type your next message :-";
+                break;
+                case "Who is my best friend?":
+                case "What's my best friend's name?":
+                case "What is my best friend's name?":
+                case "Who's my best friend?":
+                case "who is my best friend?":
+                case "what's my best friend's name?":
+                case "what is my best friend's name?":
+                case "who's my best friend?":
+                case "Who is my best friend":
+                case "What's my best friend's name":
+                case "What is my best friend's name":
+                case "Who's my best friend":
+                case "who is my best friend":
+                case "what's my best friend's name":
+                case "what is my best friend's name":
+                case "who's my best friend":
+                if (fn=="")
+                {
+                    System.out.println("Umm, I don't know your friend's name but if you tell me I'll remember It for you");
+                    fn = sc.nextLine(); 
+                }
+                else if(fn!="")
+                    System.out.println("Your friend's name is " + fn);
+                msg1 = "Type your next message :-";
+                break;
+                case "Which is your gender?":
+                case "What's your gender?":
+                case "What is your gender?":
+                case "What's ur gender":
+                case "What is ur gender":
+                case "Which is ur gender?":
+                case "which is your gender?":
+                case "what's your gender?":
+                case "what is your gender?":
+                case "what's ur gender":
+                case "what is ur gender":
+                case "which is ur gender?":
+                System.out.println("I am a boy");
+                msg1 = "Type your next message :-";
+                break;
+                case "Where do you live?":
+                case "where do you live?":
+                case "Where do u live?":
+                case "where do u live?":
+                case "Where do you live":
+                case "where do you live":
+                case "Where do u live":
+                case "where do u live":
+                System.out.println("I live in Kolkata");
+                msg1 = "Type your next message :-";
+                break;
+                case "When is your birthday?":
+                case "When is ur birthday?":
+                case "When is ur bday?":
+                case "When is your bday?":
+                case "when is your birthday?":
+                case "when is ur birthday?":
+                case "when is ur bday?":
+                case "when is your bday?":
+                case "When is your birthday":
+                case "When is ur birthday":
+                case "When is ur bday":
+                case "When is your bday":
+                System.out.println("My birthday is on 16 September 2021");
+                msg1 = "Type your next message :-";
+                break;
+                case "When is my birthday?":
+                case "When is my bday?":
+                case "when is my birthday?":
+                case "when is my bday?":
+                case "When is my birthday":
+                case "When is my bday":
+                if (bm=="" && bd==0 && by==0)
+                {
+                    System.out.println("Umm, I don't know your birthday but if you tell me I'll remember It for you");
+                    System.out.println("Enter your 2 - digit birth date");
+                    bd = sc.nextInt();
+                    System.out.println("Enter your birth month");
+                    bm = sc.next();
+                    System.out.println("Enter your 4 - digit birth year");
+                    by = sc.nextInt(); 
+                }
+                else if(bm!="" && bd!=0 && by!=0)
+                    System.out.println("Your birthday is on " + bd + "th " + bm + " " + by + "🎂🎂🎂");
+                msg1 = "Type your next message :-";
+                break;
+                case "How r u?":
+                case "How are u?":
+                case "How r you?":
+                case "how r u?":
+                case "how are u?":
+                case "how r you?":
+                case "How r u":
+                case "How are u":
+                case "How r you":
+                System.out.println("I'm fine 😁.How are you?");
+                reaction6 = sc.nextLine();
+                msg1 = "Type your next message :-";
+                break;
+                case "How is your day going ?":
+                case "How's your day going?":
+                case "How's ur day going?":
+                case "How's ur day goin?":
+                case "How's your day goin?":
+                case "How is your day goin?":
+                case "how is your day going ?":
+                case "how's your day going?":
+                case "how's ur day going?":
+                case "how's ur day goin?":
+                case "how's your day goin?":
+                case "how is your day goin?":
+                case "How is your day going ":
+                case "How's your day going":
+                case "How's ur day going":
+                case "How's ur day goin":
+                case "How's your day goin":
+                case "How is your day goin":
+                System.out.println("My day is going as brilliantly as it can be 😎.How is your day going?");
+                reaction7 = sc.nextLine();
+                msg1 = "Type your next message :-";
+                break;
+                case "What else can you do?":
+                case "What else can u do?":
+                case "What can u do?":
+                case "What can you do?":
+                case "what else can you do?":
+                case "what else can u do?":
+                case "what can u do?":
+                case "what can you do?":
+                case "What else can you do":
+                case "What else can u do":
+                case "What can u do":
+                case "What can you do":
+                System.out.println("Hey there!I'm your friend LetsChat ready to perform the following taskes for you :-");
+                System.out.println("Type #Jokes to know some of the funniest jokes");
+                System.out.println("Type #Movies to see some free & popular movies on Youtube, Disney+Hotstar and JioCinema");
+                System.out.println("Type #Songs to listen to some of the popular songs on Youtube");
+                System.out.println("Type #Workout to see how to keep yourself fit everyday");
+                System.out.println("Type #Facts to what are the top facts of today");
+                System.out.println("Type #News to know some of the trending news of today");
+                System.out.println("Type #Map to see the fastest route to reach your destination, if any");
+                System.out.println("Type #World to see the entire world right on your monitor");
+                System.out.println("Or simply start chatting with me");
+                msg1 = "Type your next message :-";
+                break;
+                default:
+                System.out.println("Sorry :( , I can't answer this question");
+                msg1 = "Type your next message :-";
+                break;
+            }
+        }
+    }
+}
