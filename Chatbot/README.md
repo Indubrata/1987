@@ -26,7 +26,7 @@ Run the script from your terminal:
 python ai_tool.py
 
 Follow the on-screen prompts to:
-1. Provide your API key (if not set in the environment).
+1. Provide your API key.
 2. Select a feature from the menu.
 3. Enter the text or concept you want the AI to process.
 4. View the result!
